@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="WorldDataFactory.c" />
+    <ClCompile Include="CommandListFactory.c" />
+    <ClCompile Include="Source\CommandHandler.c">
+      <Filter>Command Handling</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CommandList.c">
+      <Filter>Command Handling</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputProvider.c">
+      <Filter>Command Handling</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DropCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GoCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HelpCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InventoryCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\LookCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\QuitCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TakeCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UseCommandHandler.c">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameFlags.c">
+      <Filter>Game State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameState.c">
+      <Filter>Game State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameStateFactory.c">
+      <Filter>Game State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\stdafx.c">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BrickFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EggFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ExitDoorFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GoldPieceFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Item.c">
+      <Filter>World Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ItemList.c">
+      <Filter>World Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Room.c">
+      <Filter>World Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RoomExit.c">
+      <Filter>World Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WorldData.c">
+      <Filter>World Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\CommandContext.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommandData.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommandHandler.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommandHandlerFunctions.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommandList.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommandListFactory.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CommandTypes.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputProvider.h">
+      <Filter>Command Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DropCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GoCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HelpCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InventoryCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\LookCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\QuitCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TakeCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UseCommandHandler.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameFlags.h">
+      <Filter>Game State</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameState.h">
+      <Filter>Game State</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameStateFactory.h">
+      <Filter>Game State</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\stdafx.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\targetver.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BrickFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EggFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ExitDoorFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GoldPieceFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Item.h">
+      <Filter>World Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ItemList.h">
+      <Filter>World Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Room.h">
+      <Filter>World Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RoomExit.h">
+      <Filter>World Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WorldData.h">
+      <Filter>World Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WorldDataFactory.h">
+      <Filter>World Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Command Handling">
+      <UniqueIdentifier>{3c6a6e39-d98e-49bf-a20b-d61bce50ea2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World Data">
+      <UniqueIdentifier>{8a0a8938-f1a9-4b62-85dc-7387fb6de452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game State">
+      <UniqueIdentifier>{729e4178-11ed-4e88-b5f3-d9e92d73f4a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{77e1f2e6-23db-4f39-b669-4af935b43339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{52165ef7-ba90-4cb9-8da3-5b251f3f7f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World Data\Item Functions">
+      <UniqueIdentifier>{d3a6b694-c6d2-4ac5-be41-7e77fee84df1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

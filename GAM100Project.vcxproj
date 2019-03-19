@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C381DA2-C3DB-485C-93E5-1E7A8F0A7FCC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GAM100Project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectName>GAM100Project</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\Source;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\Source;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\BrickFunctions.h" />
+    <ClInclude Include="Source\CommandContext.h" />
+    <ClInclude Include="Source\CommandData.h" />
+    <ClInclude Include="Source\CommandHandler.h" />
+    <ClInclude Include="Source\CommandHandlerFunctions.h" />
+    <ClInclude Include="Source\CommandList.h" />
+    <ClInclude Include="Source\CommandListFactory.h" />
+    <ClInclude Include="Source\CommandTypes.h" />
+    <ClInclude Include="Source\DropCommandHandler.h" />
+    <ClInclude Include="Source\EggFunctions.h" />
+    <ClInclude Include="Source\ExitDoorFunctions.h" />
+    <ClInclude Include="Source\GameFlags.h" />
+    <ClInclude Include="Source\GameState.h" />
+    <ClInclude Include="Source\GameStateFactory.h" />
+    <ClInclude Include="Source\GoCommandHandler.h" />
+    <ClInclude Include="Source\GoldPieceFunctions.h" />
+    <ClInclude Include="Source\HelpCommandHandler.h" />
+    <ClInclude Include="Source\InputProvider.h" />
+    <ClInclude Include="Source\InventoryCommandHandler.h" />
+    <ClInclude Include="Source\Item.h" />
+    <ClInclude Include="Source\ItemList.h" />
+    <ClInclude Include="Source\LookCommandHandler.h" />
+    <ClInclude Include="Source\QuitCommandHandler.h" />
+    <ClInclude Include="Source\Room.h" />
+    <ClInclude Include="Source\RoomExit.h" />
+    <ClInclude Include="Source\stdafx.h" />
+    <ClInclude Include="Source\TakeCommandHandler.h" />
+    <ClInclude Include="Source\targetver.h" />
+    <ClInclude Include="Source\UseCommandHandler.h" />
+    <ClInclude Include="Source\WorldData.h" />
+    <ClInclude Include="Source\WorldDataFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommandListFactory.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="Source\BrickFunctions.c" />
+    <ClCompile Include="Source\CommandHandler.c" />
+    <ClCompile Include="Source\CommandList.c" />
+    <ClCompile Include="Source\DropCommandHandler.c" />
+    <ClCompile Include="Source\EggFunctions.c" />
+    <ClCompile Include="Source\ExitDoorFunctions.c" />
+    <ClCompile Include="Source\GameFlags.c" />
+    <ClCompile Include="Source\GameState.c" />
+    <ClCompile Include="Source\GameStateFactory.c" />
+    <ClCompile Include="Source\GoCommandHandler.c" />
+    <ClCompile Include="Source\GoldPieceFunctions.c" />
+    <ClCompile Include="Source\HelpCommandHandler.c" />
+    <ClCompile Include="Source\InputProvider.c" />
+    <ClCompile Include="Source\InventoryCommandHandler.c" />
+    <ClCompile Include="Source\Item.c" />
+    <ClCompile Include="Source\ItemList.c" />
+    <ClCompile Include="Source\LookCommandHandler.c" />
+    <ClCompile Include="Source\QuitCommandHandler.c" />
+    <ClCompile Include="Source\Room.c" />
+    <ClCompile Include="Source\RoomExit.c" />
+    <ClCompile Include="Source\stdafx.c" />
+    <ClCompile Include="Source\TakeCommandHandler.c" />
+    <ClCompile Include="Source\UseCommandHandler.c" />
+    <ClCompile Include="Source\WorldData.c" />
+    <ClCompile Include="WorldDataFactory.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
