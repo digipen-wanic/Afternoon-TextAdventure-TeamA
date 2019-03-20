@@ -258,7 +258,7 @@ Room* Room9_Build()
 	add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "east", 8);  /* 1 = the room index this exit connects to */
 
-	* Items
+	/* Items
 	dd items to the room */
 	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 	/* return the new room */
