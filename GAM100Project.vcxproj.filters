@@ -76,6 +76,18 @@
     <ClCompile Include="Source\WorldData.c">
       <Filter>World Data</Filter>
     </ClCompile>
+    <ClCompile Include="TeddyFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="CandyFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendlyOrphanFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineFunctions.c">
+      <Filter>World Data\Item Functions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CommandContext.h">
@@ -170,6 +182,18 @@
     </ClInclude>
     <ClInclude Include="Source\WorldDataFactory.h">
       <Filter>World Data</Filter>
+    </ClInclude>
+    <ClInclude Include="TeddyFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="CandyFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendlyOrphanFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineFunctions.h">
+      <Filter>World Data\Item Functions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
