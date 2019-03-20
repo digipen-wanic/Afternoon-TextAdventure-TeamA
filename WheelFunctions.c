@@ -1,10 +1,10 @@
 /******************************************************************************
-filename    KeyFunctions.c
+filename    WheelFunctions.c
 author      Christian Yan
 DP email    c.yan@digipen.edu
 
 Brief Description:
-This file defines the functions to create a specific item, the "Key".
+This file defines the functions to create a specific item, the "Wheel".
 
 ******************************************************************************/
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
@@ -16,7 +16,7 @@ This file defines the functions to create a specific item, the "Key".
 #include "ItemList.h" /* ItemList_FindItem, ItemList_Remove, ItemList_Add */
 #include "Item.h" /* Item_Create */
 
-void Cover_Take(CommandContext context, GameState* gameState, WorldData* worldData)
+void Wheel_Take(CommandContext context, GameState* gameState, WorldData* worldData)
 {
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(gameState);
@@ -26,12 +26,7 @@ void Cover_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 }
 
 /* Build a "brick" object */
-Item* Cover_Build()
+Item* Wheel_Build()
 {
-	return Item_Create("wheel", "TODO: Wheel Description", true, NULL, Cover_Take, NULL);
-}
-
-Item * Wheel_Build()
-{
-	return NULL;
+	return Item_Create("wheel", "TODO: Wheel Description", true, NULL, Wheel_Take, NULL);
 }

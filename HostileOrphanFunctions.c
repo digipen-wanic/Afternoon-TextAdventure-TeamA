@@ -16,6 +16,13 @@ This file defines the functions to create a specific item, the "HostileOrphan".
 #include "ItemList.h" /* ItemList_FindItem, ItemList_Remove, ItemList_Add */
 #include "Item.h" /* Item_Create */
 
+void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData* worldData)
+{
+	/*TODO: Orphan talk*/
+	UNREFERENCED_PARAMETER(context);
+	UNREFERENCED_PARAMETER(gameState);
+	UNREFERENCED_PARAMETER(worldData);
+}
 /* Build a "brick" object */
 Item* HostileOrphan_Build()
 {
