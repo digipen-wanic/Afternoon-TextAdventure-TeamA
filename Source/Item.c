@@ -28,6 +28,7 @@ typedef struct Item
 	ItemFunc useFunc;	/* a function called when the user uses this item, if any */
 	ItemFunc takeFunc;	/* a function called when the user takes this item, if any */
 	ItemFunc dropFunc;	/* a function called when the user uses this item, if any */
+	ItemFunc talkFunc;
 } Item;
 
 
@@ -129,6 +130,10 @@ ItemFunc Item_GetDropFunc(Item* item)
 	return (item != NULL) ? item->dropFunc : NULL;
 }
 
+ItemFunc Item_GetTalkFunc(Item* item)
+{
+	return (item != NULL) ? item->talkFunc : NULL;
+}
 
 /* Print a description of the item to standard output */
 void Item_Print(Item* item)

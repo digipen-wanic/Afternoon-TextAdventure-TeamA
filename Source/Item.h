@@ -47,5 +47,7 @@ ItemFunc Item_GetTakeFunc(Item* item);
 /* Retrieve the "drop" function for this item, if any */
 ItemFunc Item_GetDropFunc(Item* item);
 
+ItemFunc Item_GetTalkFunc(Item* item);
+
 /* Print a description of the item to standard output */
 void Item_Print(Item* item);
