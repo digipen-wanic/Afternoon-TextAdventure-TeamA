@@ -85,8 +85,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CandyFunctions.h" />
+    <ClInclude Include="CoverFunctions.h" />
     <ClInclude Include="EngineFunctions.h" />
+    <ClInclude Include="EscapePodButtonFunctions.h" />
     <ClInclude Include="FriendlyOrphanFunctions.h" />
+    <ClInclude Include="HostileOrphanFunctions.h" />
+    <ClInclude Include="KeyFunctions.h" />
+    <ClInclude Include="OpenHatchButtonFunctions.h" />
+    <ClInclude Include="PropellerFunctions.h" />
+    <ClInclude Include="SelfDestructButton.h" />
     <ClInclude Include="Source\BrickFunctions.h" />
     <ClInclude Include="Source\CommandContext.h" />
     <ClInclude Include="Source\CommandData.h" />
@@ -119,13 +126,21 @@
     <ClInclude Include="Source\WorldData.h" />
     <ClInclude Include="Source\WorldDataFactory.h" />
     <ClInclude Include="TeddyFunctions.h" />
+    <ClInclude Include="WheelFunctions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CandyFunctions.c" />
     <ClCompile Include="CommandListFactory.c" />
+    <ClCompile Include="CoverFucntions.c" />
     <ClCompile Include="EngineFunctions.c" />
+    <ClCompile Include="EscapePodButtonFunctions.c" />
     <ClCompile Include="FriendlyOrphanFunctions.c" />
+    <ClCompile Include="HostileOrphanFunctions.c" />
+    <ClCompile Include="KeyFunctions.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="OpenHatchButtonFunctions.c" />
+    <ClCompile Include="PropellerFunctions.c" />
+    <ClCompile Include="SelfDestructButtonFunctions.c" />
     <ClCompile Include="Source\BrickFunctions.c" />
     <ClCompile Include="Source\CommandHandler.c" />
     <ClCompile Include="Source\CommandList.c" />
@@ -151,6 +166,7 @@
     <ClCompile Include="Source\UseCommandHandler.c" />
     <ClCompile Include="Source\WorldData.c" />
     <ClCompile Include="TeddyFunctions.c" />
+    <ClCompile Include="WheelFunctions.c" />
     <ClCompile Include="WorldDataFactory.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

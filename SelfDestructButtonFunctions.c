@@ -30,8 +30,3 @@ Item* SelfDestructButton_Build()
 {
 	return Item_Create("escapepodbutton", "TODO: EscapePodButton Description", false, SelfDestructButton_Use, NULL, NULL);
 }
-
-Item * SelfDestructButton_Build()
-{
-	return NULL;
-}

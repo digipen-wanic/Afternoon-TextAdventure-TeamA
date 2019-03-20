@@ -16,7 +16,7 @@ This file defines the functions to create a specific item, the "Propeller".
 #include "ItemList.h" /* ItemList_FindItem, ItemList_Remove, ItemList_Add */
 #include "Item.h" /* Item_Create */
 
-void Cover_Take(CommandContext context, GameState* gameState, WorldData* worldData)
+void Propeller_Take(CommandContext context, GameState* gameState, WorldData* worldData)
 {
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(gameState);
@@ -26,12 +26,7 @@ void Cover_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 }
 
 /* Build a "brick" object */
-Item* Cover_Build()
+Item* Propeller_Build()
 {
-	return Item_Create("propeller", "TODO: Propeller Description", true, NULL, Cover_Take, NULL);
-}
-
-Item * Propeller_Build()
-{
-	return NULL;
+	return Item_Create("propeller", "TODO: Propeller Description", true, NULL, Propeller_Take, NULL);
 }

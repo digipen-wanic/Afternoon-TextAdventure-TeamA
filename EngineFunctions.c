@@ -1,5 +1,5 @@
 /******************************************************************************
-filename    TeddyFunctions.c
+filename    EngineFunctions.c
 author      Nico Hickman
 DP email    nicholas.hickman@digipen.edu
 
