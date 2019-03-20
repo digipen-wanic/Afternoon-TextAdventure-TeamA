@@ -22,9 +22,10 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
+	
 }
 
-/* Build a "brick" object */
+/* Build a "FriendlyOrphan" object */
 Item* FOrphan_Build()
 {
 	return Item_Create("friendly orphan", "TODO: Friendly Orphan Description", false, NULL, NULL, NULL);
