@@ -22,11 +22,11 @@ void Teddy_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: Teddy Take Description\n");
+	printf("You Pick Up Mr. Fluffles. He stares at you.\n");
 }
 
 /* Build a "brick" object */
 Item* Teddy_Build()
 {
-	return Item_Create("teddy", "TODO: Teddy Description", true,NULL, Teddy_Take, NULL);
+	return Item_Create("teddy", "This is your Teddy Bear. You’ve had it since Childhood and it has never left your side.", true, NULL, Teddy_Take, NULL);
 }
