@@ -22,11 +22,11 @@ void Key_Take(CommandContext context, GameState* gameState, WorldData* worldData
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: Key Take Description\n");
+	printf("You have the Key.\n");
 }
 
 /* Build a "brick" object */
 Item* Key_Build()
 {
-	return Item_Create("key", "TODO: Key Description", true, NULL, Key_Take, NULL);
+	return Item_Create("key", "The key for the Storage room. It shimmers in the light of your Hunkiness.", true, NULL, Key_Take, NULL);
 }
