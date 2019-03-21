@@ -36,7 +36,7 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 	if (gameState->currentRoomIndex != 7)
 	{
 		/* we are not in the right room - inform the user of the problem and take no action */
-		printf("TODO\n");
+		printf("There is no Orphan in this room to talk to.\n");
 		return;
 	}
 
@@ -44,7 +44,7 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 	if (ItemList_FindItem(gameState->inventory, "teddy") == NULL)
 	{
 		/* the player already used the teddy - inform the user of the problem and take no action */
-		printf("TODO\n");
+		printf("You can see John hugging Mr. Fluffles as the plane speedly dessends. You know that you will never feel Mr. Fluffles soft fur ever again.\n");
 		return;
 	}
 	else
@@ -66,7 +66,7 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 		gameState->inventory = ItemList_Remove(gameState->inventory, teddy);
 
 		/* Tell the user what they did */
-		printf("TODO\n");
+		printf("Orphan of Storage Protrol, John: “Thank you!”\n You hand John Mr.Fluffles, your only true friend in the world. You obtain the Storage Key!\n");
 
 		/* Add to the player's score */
 		GameState_ChangeScore(gameState, 10);
@@ -85,5 +85,5 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 /* Build a "FriendlyOrphan" object */
 Item* FOrphan_Build()
 {
-	return Item_Create("friendly orphan", "TODO: Friendly Orphan Description", false, NULL, NULL, NULL);
+	return Item_Create("friendly orphan", "Orphan of Storage Protrol, John: “Hi Mister Hunk! You probably haven’t heard of me… But I’m John! I am in charge of this ship's Storage room.”", false, NULL, NULL, NULL);
 }
