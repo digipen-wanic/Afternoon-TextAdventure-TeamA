@@ -22,11 +22,11 @@ void Propeller_Take(CommandContext context, GameState* gameState, WorldData* wor
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: Propeller Take Description\n");
+	printf("You pick up the Propeller. It was no match for your Hunkiness.\n");
 }
 
 /* Build a "brick" object */
 Item* Propeller_Build()
 {
-	return Item_Create("propeller", "TODO: Propeller Description", true, NULL, Propeller_Take, NULL);
+	return Item_Create("propeller", "A Shiny Silver Propeller, Perfect for a Hunky guy like yourself.", true, NULL, Propeller_Take, NULL);
 }
