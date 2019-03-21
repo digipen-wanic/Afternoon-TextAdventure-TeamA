@@ -55,7 +55,7 @@ Room* Room0_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This is your Cabin. It can only barely contain your Hunkiness. You can hear Orphans running in the distance.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -87,7 +87,7 @@ Room* Room1_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This is the Control Room. There are Three Buttons on the wall, Open Hanger Door, Launch Escape Pod, and Self-Destruct Buttons. There is an exit to a small side hallway to the South.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -108,7 +108,7 @@ Room* Room2_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("A Smaller Side Hallway form the main hallway. To the North, there is the Control Room. To the South, there is the Engine room, where you can hear a clatter of noise from what you assume is a broken engine. To the East, there is the Main Hallway.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -130,7 +130,7 @@ Room* Room3_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This is the Engine Room.The Main Engine of the ship seems to have stopped working, But your no Mechanic, and there is no Mechanic on board the ship as well. To the North is a Small Side Hallway.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -150,7 +150,7 @@ Room* Room4_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This is the Storage Room. You had to make a huge Sacrifice to get here. There is a lot of Shelves around here, full of Boxes. There is an Exit to the Main Hallway to the North.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -170,7 +170,7 @@ Room* Room5_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This Staircase leads Down to the Hanger. To the North is the Kitchen.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -190,7 +190,7 @@ Room* Room6_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("The Kitchen of the Ship. You can see some of the Orphans taking as much food as they can hold or carry in bag, but they seem to busy to talk to you. There is an Exit into the hallway to the West and an Exit to the Bridge to the North. There is a Stairway (STAIRS DOWN) to the South that leads down to the Hanger.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -212,7 +212,7 @@ Room* Room7_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This is the Bridge of the ship. Orphans are running all over the place. There is a huge Window you could look out of. There is a Orphan that is standing in the corner. There is an Exit to the Kitchen to the South.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -232,7 +232,7 @@ Room* Room8_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This is the Main Hallway to the ship. You can see flashing red lights and Orphans running up and Down the Hallway. To the North is your Cabin. To the South is the Storage room. To The East is the Kitchen. To the West is a Smaller Side Hallway.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -252,7 +252,7 @@ Room* Room9_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This Staircase leads Up to the Kitchen. To the North is the Hanger.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
@@ -272,7 +272,7 @@ Room* Room10_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("TODO\n");
+	room = Room_Create("This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase (STAIRS UP) up to the Kitchen.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
