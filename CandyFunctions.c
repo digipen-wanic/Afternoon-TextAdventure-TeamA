@@ -22,11 +22,11 @@ void Candy_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: Candy Take Description\n");
+	printf("You pick up the Candy.\n");
 }
 
 /* Build a "brick" object */
 Item* Candy_Build()
 {
-	return Item_Create("teddy", "TODO: Candy Description", true, NULL, Candy_Take, NULL);
+	return Item_Create("candy", "A handful of candy with a note attached to it saying: “This is the Property of Orphan General Toby, DO NOT TOUCH!”.", true, NULL, Candy_Take, NULL);
 }
