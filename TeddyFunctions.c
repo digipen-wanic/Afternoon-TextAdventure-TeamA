@@ -22,7 +22,7 @@ void Teddy_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("You Pick Up Mr. Fluffles. He stares at you.\n");
+	printf("You pick up Mr. Fluffles. He stares at you.\n");
 }
 
 /* Build a "brick" object */
