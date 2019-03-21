@@ -22,11 +22,11 @@ void Wheel_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: Wheel Take Description\n");
+	printf("You take the Wheel from the Ship. The Orphans wont be needing it.\n");
 }
 
 /* Build a "brick" object */
 Item* Wheel_Build()
 {
-	return Item_Create("wheel", "TODO: Wheel Description", true, NULL, Wheel_Take, NULL);
+	return Item_Create("wheel", "The Steering wheel for the ship. You figure that the crashing Orphans won’t be needing this to steer the ship to safety…", true, NULL, Wheel_Take, NULL);
 }
