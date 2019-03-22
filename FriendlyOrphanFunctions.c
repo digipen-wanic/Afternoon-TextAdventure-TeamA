@@ -3,6 +3,8 @@ filename    FriendlyOrphanFunctions.c
 author      Nico Hickman
 DP email    nicholas.hickman@digipen.edu
 
+Last Edited By: Hunter Bradley
+
 Brief Description:
 This file defines the functions to create a specific item, the "friendly orphan".
 
@@ -68,7 +70,7 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 Item* FOrphan_Build()
 {
 	Item* orphan = 
-	 Item_Create("orphan", "Orphan of Storage Protrol, John: “Hi Mister Hunk! You probably haven’t heard of me… But I’m John! I am in charge of this ship's Storage room.”", false, NULL, NULL, NULL);
+	 Item_Create("orphan", "Orphan of Storage Protrol, John: “Hi Mister Hunk! You probably haven’t heard of me… But I’m John! I am in charge of this ship's Storage room. Im looking for something to make me feel safe while we are crashing.”", false, NULL, NULL, NULL);
 	Item_SetTalkFunc(orphan, FOrphan_Talk);
 	return orphan;
 }

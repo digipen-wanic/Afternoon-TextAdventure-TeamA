@@ -84,6 +84,15 @@ void HandleGoCommand(CommandData *command, GameState *gameState, WorldData *worl
 	/* update the game state to move to the new room */
 	gameState->currentRoomIndex = nextRoomIndex;
 
+	/* you increased time */
+	gameState->time += 1;
+	if(gameState->time >= 50)
+	{
+		/* when you run out of steps you lose */
+		GameState_EndGame(gameState, "You ran out of moves!GAME OVER!\n");
+
+	}
+
 	/* output the successful action */
 	printf("You move %s.\n\n", command->noun);
 
