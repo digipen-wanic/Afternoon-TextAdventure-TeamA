@@ -27,31 +27,32 @@ void Plane_Assemble(CommandContext context, GameState* gameState, WorldData* wor
 		if (gameState->currentRoomIndex == 10) {
 			if (GameFlags_IsInList(gameState->gameFlags, "hatchOpen")) {
 				if (hostileOrphan == NULL) {
-					if (ItemList_FindItem(i, "propeller") != NULL && ItemList_FindItem(i, "wheel") != NULL &&ItemList_FindItem(i, "engine")) {
-						printf("TODO");
+					if (ItemList_FindItem(i, "propeller") != NULL && ItemList_FindItem(i, "wheel") != NULL &&ItemList_FindItem(i, "engine")) 
+					{
+						printf("With all the parts, you fix up the broken Escape plane, and are ready to take your leave.\n");
 					}
 					else {
-						printf("TODO");
+						printf("You are still missing something to assemble the plane.\n");
 					}
 				}
 				else {
-					printf("TODO");
+					printf("Toby Blocks the way to the Escape plane. He will not let you pass.\n");
 				}
 			}
 			else {
-				printf("TODO");
+				printf("You cannot assemble the plane at this moment. The plane will melt in the presents of your Hunkiness.\n");
 			}
 		}
 		else {
 
-			printf("TODO: Candy Take Description\n");
+			printf("Saddly, the Airship is beyond Repair, even with your Hunkiness. You will have to use this on something else.\n");
 		}
 }
 /* Build a "brick" object */
 Item* Plane_Build()
 {
 	Item* plane = 
-	 Item_Create("plane", "TODO: Candy Description", false,NULL,NULL,NULL);
+	 Item_Create("plane", "An Escape Plane, Perfect for you and your Hunkiness to escape on.", false,NULL,NULL,NULL);
 	Item_SetAssembleFunc(plane, Plane_Assemble);
 	return plane;
 }
