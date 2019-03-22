@@ -22,7 +22,7 @@ void HandleGoCommand(CommandData *command, GameState *gameState, WorldData *worl
 {
 	Room* currentRoom; /* the room we are currently in */
 	int nextRoomIndex; /* the index of hte next room */
-
+	
 	/* safety check on the parameters */
 	if ((command == NULL) || (command->noun == NULL) || (gameState == NULL) || (worldData == NULL)) 
 	{
