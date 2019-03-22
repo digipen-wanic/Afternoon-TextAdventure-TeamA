@@ -33,7 +33,7 @@ GameState* GameState_Create()
 	gameState->inventory = NULL;
 	gameState->gameFlags = NULL;
 	gameState->isRunning = true;
-
+	gameState->time = 0;
 	/* return the new object */
 	return gameState;
 }

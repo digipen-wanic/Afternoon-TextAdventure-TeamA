@@ -34,6 +34,9 @@ typedef struct GameState
 	/* The index of the room the user is currently in */
 	int currentRoomIndex;
 
+	/* this will determin how many moves will be counted */
+	int time;
+
 	/* If false, the game is over and should exit */
 	bool isRunning;
 } GameState;
