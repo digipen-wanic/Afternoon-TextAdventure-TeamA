@@ -131,17 +131,17 @@ void printMap(GameState* gameState)
 		{SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, CORNR, HWALL, HWALL, HWALL, HWALL, HWALL, HWALL, HWALL, HWALL, HWALL, HWALL, CORNR, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE, SPACE}
 	};
 
-		int **roomPosition[11][2] = {{12, 13}, {9, 18}, {11, 20}, {7, 23}, {20, 26}, {23, 16}, {12, 25}, {19,6}, {17, 17}, {58, 19}, {53,19}};
+		int roomPosition[11][2] = {{6, 16}, {8, 17}, {10, 19}, {6, 22}, {19, 25}, {22, 15}, {11, 24}, {18,5}, {16, 16}, {57, 18}, {52,18}};
 		/* counter variables */
-		int X, Y, i = 0;
-		int *roomPosition = roomPosition[gameState->currentRoomIndex];
+		int X, Y = 0;
+		int * curRoomPosition= roomPosition[gameState->currentRoomIndex];
 		/* loop through each array in the map */
 		for (Y = 0; Y < MAPHEIGHT; ++Y)
 		{
 			/* loop through all characters in the array  */
 			for (X = 0; X < MAPWIDTH; ++X)
 			{
-				if (roomPosition[i][0] == X && roomPosition[i++][1] == Y)
+				if (curRoomPosition[0] == X && curRoomPosition[1] == Y)
 				{
 					printf("X");
 				}

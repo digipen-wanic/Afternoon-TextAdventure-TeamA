@@ -67,7 +67,7 @@ Room* Room0_Build()
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "south", 8);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 8);  /* 1 = the room index this exit connects to */
 	ItemList_AddItem(Room_GetItemList(room), Teddy_Build());
 	/* Items
 	add items to the room */
@@ -268,8 +268,8 @@ Room* Room9_Build()
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "south", 5);  /* 1 = the room index this exit connects to */
-	Room_AddRoomExit(room, "north", 10);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 5);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 10);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	dd items to the room */
@@ -284,7 +284,7 @@ Room* Room10_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase up to the Kitchen. It is being guarded by an Orphan who doesn’t seem to want to go anywhere, anytime soon.\n");
+	room = Room_Create("This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase up to the Kitchen. It is being guarded by an Orphan who doesnï¿½t seem to want to go anywhere, anytime soon.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
