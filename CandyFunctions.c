@@ -31,17 +31,17 @@ void Candy_Use(CommandContext context, GameState* gameState, WorldData* worldDat
 	UNREFERENCED_PARAMETER(worldData);
 	if (gameState->currentRoomIndex == 10) {
 		if (GameFlags_IsInList(gameState->gameFlags, "hatchOpen")) {
-			printf("TODO: Candy Use");
+			printf("You Throw the candy. Toby Lunges after the candy out of the Hanger door. You are free to fix the escape plane now.");
 			Room* current = WorldData_GetRoom(worldData, 10);
 			ItemList_Remove(*Room_GetItemList(current), ItemList_FindItem(*Room_GetItemList(current), "hostileOrphan"));
 		}
 		else {
-			printf("TODO: Hatch not Open");
+			printf("Toby lunges at you. The rest is a blur as the small orphan tackles you out of the Open hanger. You and your Hunkiness don’t survive. ");
 		}
 		
 	}
 	else {
-		printf("TODO: Not in right room");
+		printf("Your Hunkiness is above eating this Candy.");
 	}
 }
 
