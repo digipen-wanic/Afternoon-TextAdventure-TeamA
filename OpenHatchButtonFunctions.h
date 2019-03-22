@@ -12,5 +12,5 @@ This file declares the functions to create a specific item, the "OpenHatch".
 typedef struct Item Item;
 
 
-/* Build a "brick" object */
+/* Build a "OpenHatchButton" object */
 Item* OpenHatchButton_Build();

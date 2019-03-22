@@ -12,5 +12,5 @@ This file declares the functions to create a specific item, the "propeller".
 typedef struct Item Item;
 
 
-/* Build a "brick" object */
+/* Build a "Propeller" object */
 Item* Propeller_Build();

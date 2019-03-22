@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    WorldDataFactory.c
 author      Justin Chambers
+Edited by Nico Hickman
 DP email    justin.chambers@digipen.edu
 course      GAM100 ** Do not use this code in your team project
 
@@ -17,20 +18,17 @@ This could be used to create default states as well as loaded state.
 #include "WorldData.h" /* WorldData_Create, WorldData_SetRoom */
 #include "Room.h" /* Room_Create, Room_AddRoomExit, Room_GetItemList */
 #include "ItemList.h" /* ItemList_Add */
-#include "BrickFunctions.h" /* Brick_Build */
-#include "GoldPieceFunctions.h" /* GoldPiece_Build */
-#include "ExitDoorFunctions.h" /* ExitDoor_Build */
-#include "TeddyFunctions.h"
-#include "EngineFunctions.h"
-#include "HostileOrphanFunctions.h"
-#include "FriendlyOrphanFunctions.h"
-#include "OpenHatchButtonFunctions.h"
-#include "EscapePodButtonFunctions.h"
-#include "SelfDestructButton.h"
-#include "PropellerFunctions.h"
-#include "WheelFunctions.h"
-#include "CandyFunctions.h"
-#include "PlaneFunctions.h"
+#include "TeddyFunctions.h"/* Teddy Function declration*/
+#include "EngineFunctions.h"/* Engine Function declration*/
+#include "HostileOrphanFunctions.h"/* HostileOrphan Function declration*/
+#include "FriendlyOrphanFunctions.h"/* FriendlyOrphan Function declration*/
+#include "OpenHatchButtonFunctions.h"/* OpenHatch Button Function declration*/
+#include "EscapePodButtonFunctions.h"/* Escape Pod Button Function declration*/
+#include "SelfDestructButton.h"/* Self Destruct Button Function declration*/
+#include "PropellerFunctions.h"/* Propeller Function declration*/
+#include "WheelFunctions.h"/* Wheel Function declration*/
+#include "CandyFunctions.h"/* Candy Function declration*/
+#include "PlaneFunctions.h"/* Plane Function declration*/
 /******************************************************************************
 	Build room TEMPLATE
     Use this example function to build additional rooms
@@ -48,16 +46,11 @@ Room* RoomN_Build()
 	   add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "north", 1);  /* 1 = the room index this exit connects to */
 
-	/* Items
-	   add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
-
 	/* Return the new room */
 	return room;
 }
 
 
-/* TODO REQUIRED: Build room 0 */
 Room* Room0_Build()
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
@@ -71,25 +64,11 @@ Room* Room0_Build()
 	add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "south", 8);  /* 1 = the room index this exit connects to */
 	ItemList_AddItem(Room_GetItemList(room), Teddy_Build());
-	/* Items
-	add items to the room */
-	/* ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build()); */
-
-	/* TODO REQUIRED: Call Room_Create with the Room 1 description:
-	"This is room 0. It is a display room with a cage in the middle. You can see a jeweled egg inside the cage.  There is a crack in the west wall, but you can't fit through it from this side.\n" */
-	
-	/* TODO REQUIRED: Add an Exit "north" to Room 1 */
-	/* TODO BASIC: Add room exit shortcut for "n" */
-
-	/* TODO REQUIRED: add an exit door to the list of items in the room, ExitDoor_Build() */
-	/* TODO ADVANCED: (not required) update the description and add a room exit to the "east" */
-
 	/* return the new room */
 	return room;
 }
 
 
-/* TODO REQUIRED: Build room 1 */
 Room* Room1_Build()
 {
 	/* Pre-declare a room pointer which we will use to build the new room */
@@ -310,8 +289,6 @@ WorldData* CreateInitialWorldData()
 	/* The new world data */
 	WorldData* worldData;
 
-	/* TODO REQUIRED: update room count to match the number of rooms you have created and added to the world
-	   if this number doesn't match then your game will either crash or you will end up stuck in a broken room with no exits */
 	int roomCount = 11;
 
 	/* create the new WorldData object with 3 rooms */
@@ -329,12 +306,6 @@ WorldData* CreateInitialWorldData()
 	WorldData_SetRoom(worldData, 8, Room8_Build());
 	WorldData_SetRoom(worldData, 9, Room9_Build());
 	WorldData_SetRoom(worldData, 10, Room10_Build());
-
-
-
-	/* TODO REQUIRED: add rooms 1 and 2 to the world data */
-
-	/* TODO ADVANCED: add additional advanced rooms */
 
 	/* return the new object */
 	return worldData;

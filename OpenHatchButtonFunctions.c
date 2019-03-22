@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    OpenHatchButtonFunctions.c
 author      Christian Yan
+edited by  Hunter Bradley
 DP email    c.yan@digipen.edu
 
 Brief Description:
@@ -27,7 +28,7 @@ void OpenHatchButton_Use(CommandContext context, GameState* gameState, WorldData
 	gameState->gameFlags = GameFlags_Add(gameState->gameFlags, "hatchOpen");
 }
 
-/* Build a "brick" object */
+/* Build a "OpenHatchButton" object */
 Item* OpenHatchButton_Build()
 {
 	return Item_Create("openhatch", "The Button to open the Hatch doors. This is the Button you need to press to escape with your Hunkiness.", false, OpenHatchButton_Use, NULL, NULL);

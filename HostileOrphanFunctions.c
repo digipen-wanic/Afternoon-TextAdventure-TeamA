@@ -1,10 +1,11 @@
 /******************************************************************************
 filename    HostileOrphanFunctions.c
 author      Christian Yan
+edited by  Hunter Bradley
 DP email    c.yan@digipen.edu
 
 Brief Description:
-This file defines the functions to create a specific item, the "HostileOrphan".
+This file defines the functions to create a specific item, the "HostileOrphan". Also contains the descriptions for the hostile oprhan.
 
 ******************************************************************************/
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
@@ -18,7 +19,6 @@ This file defines the functions to create a specific item, the "HostileOrphan".
 #include "KeyFunctions.h"
 void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData* worldData)
 {
-	/*TODO: Orphan talk*/
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
@@ -72,14 +72,6 @@ void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData*
 
 		/* Add to the player's score */
 		GameState_ChangeScore(gameState, 10);
-
-		/* Update the room description to reflect the change in the room */
-		/* Room_SetDescription(room, "TODO\n");
-
-		/* Add a key to the current room, since the cage has been bashed open */
-		/* *roomItemsPtr = ItemList_Add(*roomItemsPtr, Key_Build());
-
-		/* the gold piece has not been scored, so mark the flag */
 
 		/* 
 		 * throw flag to remove orphan

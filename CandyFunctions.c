@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    CandyFunctions.c
 author      Nico Hickman
+edited by  Hunter Bradley
 DP email    nicholas.hickman@digipen.edu
 
 Brief Description:
@@ -45,7 +46,7 @@ void Candy_Use(CommandContext context, GameState* gameState, WorldData* worldDat
 	}
 }
 
-/* Build a "brick" object */
+/* Build a "Candy" object */
 Item* Candy_Build()
 {
 	Item* candy = Item_Create("candy", "A handful of candy with a note attached to it saying: 'This is the Property of Orphan General Toby, DO NOT TOUCH!'.", true, Candy_Use, Candy_Take, NULL);

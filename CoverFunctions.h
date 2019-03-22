@@ -12,5 +12,5 @@ This file declares the functions to create a specific item, the "cover".
 typedef struct Item Item;
 
 
-/* Build a "brick" object */
+/* Build a "Cover" object */
 Item* Cover_Build();

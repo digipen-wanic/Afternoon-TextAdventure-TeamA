@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    CoverFunctions.c
 author      Christian Yan
+edited by  Hunter Bradley
 DP email    c.yan@digipen.edu
 
 Brief Description:

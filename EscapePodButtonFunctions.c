@@ -1,6 +1,7 @@
 /******************************************************************************
 filename   EscapePodButtonFunctions.c
 author      Christian Yan
+edited by  Hunter Bradley
 DP email    c.yan@digipen.edu
 
 Brief Description:
@@ -25,7 +26,7 @@ void EscapePodButton_Use(CommandContext context, GameState* gameState, WorldData
 	printf("You Pressed the Button. You can hear the screaming of Orphans as Escape pods drop from the sky. No Orphans have been saved with those escape pods.\n");
 }
 
-/* Build a "brick" object */
+/* Build a "EscapePodButton" object */
 Item* EscapePodButton_Build()
 {
 	return Item_Create("escapepodbutton", "The Escape Pod Button. You see no use for the Escape Pods, seeing as they can not contain your Hunkiness.", false, EscapePodButton_Use, NULL, NULL);

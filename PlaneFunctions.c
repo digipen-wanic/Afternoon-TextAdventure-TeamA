@@ -1,10 +1,11 @@
 /******************************************************************************
-filename    CandyFunctions.c
+filename    PlaneFunctions.c
 author      Nico Hickman
+edited by  Hunter Bradley
 DP email    nicholas.hickman@digipen.edu
 
 Brief Description:
-This file defines the functions to create a specific item, the "candy".
+This file defines the functions to create a specific item, the "Plane". This also has the descriptions for when building the plane.
 
 ******************************************************************************/
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
@@ -48,7 +49,7 @@ void Plane_Assemble(CommandContext context, GameState* gameState, WorldData* wor
 			printf("Saddly, the Airship is beyond Repair, even with your Hunkiness. You will have to use this on something else.\n");
 		}
 }
-/* Build a "brick" object */
+/* Build a "Plane" object */
 Item* Plane_Build()
 {
 	Item* plane = 

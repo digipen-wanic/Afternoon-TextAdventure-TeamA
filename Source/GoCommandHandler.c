@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    GoCommandHandler.c
 author      Matthew Picioccio
+Edited By Blake North
 DP email    mattpic@digipen.edu
 course      GAM100 ** Do not use this code in your team project
 

@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    PropellerFunctions.c
 author      Christian Yan
+edited by  Hunter Bradley
 DP email    c.yan@digipen.edu
 
 Brief Description:
@@ -25,7 +26,7 @@ void Propeller_Take(CommandContext context, GameState* gameState, WorldData* wor
 	printf("You pick up the Propeller. It was no match for your Hunkiness.\n");
 }
 
-/* Build a "brick" object */
+/* Build a "propeller" object */
 Item* Propeller_Build()
 {
 	return Item_Create("propeller", "A Shiny Silver Propeller, Perfect for a Hunky guy like yourself.", true, NULL, Propeller_Take, NULL);

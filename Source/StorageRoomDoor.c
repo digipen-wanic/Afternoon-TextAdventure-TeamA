@@ -4,7 +4,7 @@ author      Nico Hickman
 DP email    nicholas.hickman@digipen.edu
 
 Brief Description:
-This file defines the functions to create a specific item, the "candy".
+This file defines the functions to create a specific item, the "SRDoor".
 
 ******************************************************************************/
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
@@ -33,7 +33,7 @@ void SRDoor_Use(CommandContext context, GameState* gameState, WorldData* worldDa
 	}
 }
 
-/* Build a "brick" object */
+/* Build a "SRDoor" object */
 Item* SRDoor_Build()
 {
 	return Item_Create("srdoor", "TODO: Candy Description", false, SRDoor_Use, NULL, NULL);

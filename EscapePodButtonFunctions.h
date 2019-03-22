@@ -12,6 +12,6 @@ This file declares the functions to create a specific item, the "EscapePodButton
 typedef struct Item Item;
 
 
-/* Build a "brick" object */
+/* Build a "EscapePodButton" object */
 Item* EscapePodButton_Build();
 

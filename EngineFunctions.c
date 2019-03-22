@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    EngineFunctions.c
 author      Nico Hickman
+edited by  Hunter Bradley
 DP email    nicholas.hickman@digipen.edu
 
 Brief Description:
@@ -25,7 +26,7 @@ void Engine_Take(CommandContext context, GameState* gameState, WorldData* worldD
 	printf("You pick up the Engine. It was no match for your Hunkiness.\n");
 }
 
-/* Build a "brick" object */
+/* Build a "Cover" object */
 Item* Engine_Build()
 {
 	return Item_Create("engine", "A very powerful Engine from the best inventor from this Era. It will perfectly suit you and your Hunkiness.", true, NULL, Engine_Take, NULL);

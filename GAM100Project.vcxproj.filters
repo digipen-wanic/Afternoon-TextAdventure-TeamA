@@ -49,18 +49,6 @@
     <ClCompile Include="Source\stdafx.c">
       <Filter>Platform</Filter>
     </ClCompile>
-    <ClCompile Include="Source\BrickFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\EggFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\ExitDoorFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\GoldPieceFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Item.c">
       <Filter>World Data</Filter>
     </ClCompile>
@@ -164,18 +152,6 @@
     </ClInclude>
     <ClInclude Include="Source\targetver.h">
       <Filter>Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\BrickFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\EggFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\ExitDoorFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\GoldPieceFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
     </ClInclude>
     <ClInclude Include="Source\Item.h">
       <Filter>World Data</Filter>

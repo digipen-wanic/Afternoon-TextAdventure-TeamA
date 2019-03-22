@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    TeddyFunctions.c
 author      Nico Hickman
+edited by  Hunter Bradley
 DP email    nicholas.hickman@digipen.edu
 
 Brief Description:
@@ -25,7 +26,7 @@ void Teddy_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 	printf("You pick up Mr. Fluffles. He stares at you.\n");
 }
 
-/* Build a "brick" object */
+/* Build a "Teddy" object */
 Item* Teddy_Build()
 {
 	return Item_Create("teddy", "This is your Teddy Bear. You’ve had it since Childhood and it has never left your side.", true, NULL, Teddy_Take, NULL);

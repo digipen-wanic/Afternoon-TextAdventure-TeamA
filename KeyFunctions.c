@@ -1,6 +1,7 @@
 /******************************************************************************
 filename    KeyFunctions.c
 author      Christian Yan
+edited by  Hunter Bradley
 DP email    c.yan@digipen.edu
 
 Brief Description:
@@ -41,7 +42,7 @@ void Key_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 		printf("TODO: NO KEY");
 	}
 }
-/* Build a "brick" object */
+/* Build a "Key" object */
 Item* Key_Build()
 {
 	return Item_Create("key", "The key for the Storage room. It shimmers in the light of your Hunkiness.", true, Key_Use, Key_Take, NULL);

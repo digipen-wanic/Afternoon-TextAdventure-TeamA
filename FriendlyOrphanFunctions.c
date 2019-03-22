@@ -1,17 +1,18 @@
 /******************************************************************************
 filename    FriendlyOrphanFunctions.c
 author      Nico Hickman
+edited by  Hunter Bradley
 DP email    nicholas.hickman@digipen.edu
 
 Last Edited By: Hunter Bradley
 
 Brief Description:
-This file defines the functions to create a specific item, the "friendly orphan".
+This file defines the functions to create a specific item, the "friendly orphan". Also has the descriptions for when talking to the friendly orphan.
 
 ******************************************************************************/
 #include "stdafx.h" /* UNREFERENCED_PARAMETER, NULL*/
 #include "FriendlyOrphanFunctions.h" /* Function declarations */
-#include "KeyFunctions.h"
+#include "KeyFunctions.h" /* Key Function Declerations*/
 #include "GameState.h" /* struct GameState, GameState_ChangeScore */
 #include "GameFlags.h" /* GameFlags_IsInList */
 #include "WorldData.h" /* WorldData_GetRoom */
@@ -20,7 +21,6 @@ This file defines the functions to create a specific item, the "friendly orphan"
 #include "Item.h" /* Item_Create */
 void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* worldData)
 {
-	/*TODO: Orphan talk*/
 	UNREFERENCED_PARAMETER(context);
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
@@ -56,10 +56,6 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 
 		/* Add to the player's score */
 		GameState_ChangeScore(gameState, 10);
-
-		/* Update the room description to reflect the change in the room */
-
-		/* Add a key to the current room, since the cage has been bashed open */
 
 		/* the gold piece has not been scored, so mark the flag */
 		gameState->inventory = ItemList_Add(gameState->inventory, Key_Build());
