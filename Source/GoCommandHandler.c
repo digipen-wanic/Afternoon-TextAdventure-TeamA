@@ -87,6 +87,9 @@ void HandleGoCommand(CommandData *command, GameState *gameState, WorldData *worl
 	/* output the successful action */
 	printf("You move %s.\n\n", command->noun);
 
+	/* Print map */
+	printMap(gameState);
+
 	/* get the new room */
 	currentRoom = WorldData_GetRoom(worldData, gameState->currentRoomIndex);
 
