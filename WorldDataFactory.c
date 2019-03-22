@@ -67,7 +67,7 @@ Room* Room0_Build()
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "east", 8);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "south", 8);  /* 1 = the room index this exit connects to */
 	ItemList_AddItem(Room_GetItemList(room), Teddy_Build());
 	/* Items
 	add items to the room */
