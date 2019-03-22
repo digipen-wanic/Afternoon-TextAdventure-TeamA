@@ -268,8 +268,8 @@ Room* Room9_Build()
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "north", 5);  /* 1 = the room index this exit connects to */
-	Room_AddRoomExit(room, "west", 10);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "south", 5);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 10);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	dd items to the room */
