@@ -18,9 +18,17 @@ This could be used to create default states as well as loaded state.
 #include "BrickFunctions.h" /* Brick_Build */
 #include "GoldPieceFunctions.h" /* GoldPiece_Build */
 #include "ExitDoorFunctions.h" /* ExitDoor_Build */
-
-
-
+#include "TeddyFunctions.h"
+#include "EngineFunctions.h"
+#include "HostileOrphanFunctions.h"
+#include "FriendlyOrphanFunctions.h"
+#include "OpenHatchButtonFunctions.h"
+#include "EscapePodButtonFunctions.h"
+#include "SelfDestructButton.h"
+#include "PropellerFunctions.h"
+#include "WheelFunctions.h"
+#include "CandyFunctions.h"
+#include "PlaneFunctions.h"
 /******************************************************************************
 	Build room TEMPLATE
     Use this example function to build additional rooms
@@ -60,7 +68,7 @@ Room* Room0_Build()
 	/* Exits
 	add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "east", 8);  /* 1 = the room index this exit connects to */
-
+	ItemList_AddItem(Room_GetItemList(room), Teddy_Build());
 	/* Items
 	add items to the room */
 	/* ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build()); */
@@ -95,7 +103,10 @@ Room* Room1_Build()
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), EscapePodButton_Build());
+	ItemList_AddItem(Room_GetItemList(room),SelfDestructButton_Build());
+	ItemList_AddItem(Room_GetItemList(room),OpenHatchButton_Build());
+
 	/* return the new room */
 	return room;
 }
@@ -118,7 +129,6 @@ Room* Room2_Build()
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 	/* return the new room */
 	return room;
 }
@@ -138,7 +148,7 @@ Room* Room3_Build()
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), Engine_Build());
 	/* return the new room */
 	return room;
 }
@@ -158,7 +168,7 @@ Room* Room4_Build()
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), Propeller_Build());
 	/* return the new room */
 	return room;
 }
@@ -175,10 +185,10 @@ Room* Room5_Build()
 	/* Exits
 	add one or more exits to allow navigation between rooms */
 	Room_AddRoomExit(room, "north", 6);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "south", 9);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 	/* return the new room */
 	return room;
 }
@@ -200,7 +210,7 @@ Room* Room6_Build()
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), Candy_Build());
 	/* return the new room */
 	return room;
 }
@@ -220,8 +230,9 @@ Room* Room7_Build()
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
-	/* return the new room */
+	ItemList_AddItem(Room_GetItemList(room), Wheel_Build());
+	ItemList_AddItem(Room_GetItemList(room),FOrphan_Build());
+		/* return the new room */
 	return room;
 }
 
@@ -236,11 +247,12 @@ Room* Room8_Build()
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "east", 8);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 6);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 0);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 2);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 	/* return the new room */
 	return room;
 }
@@ -256,11 +268,11 @@ Room* Room9_Build()
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "east", 8);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "north", 5);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "west", 10);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	dd items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
 	/* return the new room */
 	return room;
 }
@@ -272,15 +284,17 @@ Room* Room10_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase (STAIRS UP) up to the Kitchen.\n");
+	room = Room_Create("This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase up to the Kitchen. It is being guarded by an Orphan who doesn�t seem to want to go anywhere, anytime soon.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
-	Room_AddRoomExit(room, "east", 8);  /* 1 = the room index this exit connects to */
+	Room_AddRoomExit(room, "east", 9);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	add items to the room */
-	ItemList_AddItem(Room_GetItemList(room), ExitDoor_Build());
+	ItemList_AddItem(Room_GetItemList(room), HostileOrphan_Build());
+	ItemList_AddItem(Room_GetItemList(room), Plane_Build());
+
 	/* return the new room */
 	return room;
 }
@@ -296,13 +310,26 @@ WorldData* CreateInitialWorldData()
 
 	/* TODO REQUIRED: update room count to match the number of rooms you have created and added to the world
 	   if this number doesn't match then your game will either crash or you will end up stuck in a broken room with no exits */
-	int roomCount = 1;
+	int roomCount = 11;
 
 	/* create the new WorldData object with 3 rooms */
 	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
 
 	/* build each room and assign them to the world data */
 	WorldData_SetRoom(worldData, 0, Room0_Build());
+	WorldData_SetRoom(worldData, 1, Room1_Build());
+	WorldData_SetRoom(worldData, 2, Room2_Build());
+	WorldData_SetRoom(worldData, 3, Room3_Build());
+	WorldData_SetRoom(worldData, 4, Room4_Build());
+	WorldData_SetRoom(worldData, 5, Room5_Build());
+	WorldData_SetRoom(worldData, 6, Room6_Build());
+	WorldData_SetRoom(worldData, 7, Room7_Build());
+	WorldData_SetRoom(worldData, 8, Room8_Build());
+	WorldData_SetRoom(worldData, 9, Room9_Build());
+	WorldData_SetRoom(worldData, 10, Room10_Build());
+
+
+
 	/* TODO REQUIRED: add rooms 1 and 2 to the world data */
 
 	/* TODO ADVANCED: add additional advanced rooms */

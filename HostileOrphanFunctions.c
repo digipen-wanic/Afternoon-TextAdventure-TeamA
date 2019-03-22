@@ -38,7 +38,7 @@ void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData*
 	if (gameState->currentRoomIndex != 10)
 	{
 		/* we are not in the right room - inform the user of the problem and take no action */
-		printf("TODO\n");
+		printf("There is no Orphan in this room to talk to.\n");
 		return;
 	}
 
@@ -46,7 +46,7 @@ void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData*
 	if (ItemList_FindItem(gameState->inventory, "candy") == NULL)
 	{
 		/* the player already used the candy - inform the user of the problem and take no action */
-		printf("TODO\n");
+		printf("You do not have the candy anymore\n");
 		return;
 	}
 	else
@@ -68,7 +68,7 @@ void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData*
 		gameState->inventory = ItemList_Remove(gameState->inventory, candy);
 
 		/* Tell the user what they did */
-		printf("TODO\n");
+		printf("Orphan General Toby: “Wait… Is that the candy that i had on the counter…? Give me that!”\n");
 
 		/* Add to the player's score */
 		GameState_ChangeScore(gameState, 10);
@@ -87,12 +87,12 @@ void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData*
 		 * remove candy vrom inv
 		 */
 		ItemList_Remove(gameState->inventory, candy);
-		Room_SetDescription(room, "TODO");
+		Room_SetDescription(room, "This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase up to the Kitchen.");
 		gameState->gameFlags = GameFlags_Add(gameState->gameFlags, "orphanGone");
 	}
 }
 /* Build a "candy" object */
 Item* HostileOrphan_Build()
 {
-	return Item_Create("hostileorphan", "TODO: HostileOrphan Description", false, NULL, NULL, NULL);
+	return Item_Create("hostileorphan", "Orphan General Toby: “I’m sorry but I can’t let you get into this Escape Plane. The Captain said not to let anyone use this plane, no matter who they are.”", false, NULL, NULL, NULL);
 }

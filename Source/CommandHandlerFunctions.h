@@ -10,11 +10,9 @@ which are already implemented in the library
 
 ******************************************************************************/
 #pragma once
-
 typedef struct CommandData CommandData;
 typedef struct GameState GameState;
 typedef struct WorldData WorldData;
-
 
 /* Handles the "help" command, whic outputs a list of available verbs */
 void HandleHelpCommand(CommandData* command, GameState *gameState, WorldData *worldData);
@@ -42,4 +40,3 @@ void HandleUseCommand(CommandData* command, GameState *gameState, WorldData *wor
 
 /* TODO ADVANCED: create aditional commands (add handler function declarations here)
    this may require the creation of additional .c files to implement the command functions */
-void HandleTalkCommand(CommandData* command, GameState, *gameState, WorldData *worldData);

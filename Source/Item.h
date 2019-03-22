@@ -48,6 +48,11 @@ ItemFunc Item_GetTakeFunc(Item* item);
 ItemFunc Item_GetDropFunc(Item* item);
 
 ItemFunc Item_GetTalkFunc(Item* item);
-
+ItemFunc Item_GetAssembleFunc(Item* item);
+ItemFunc Item_GetThrowFunc(Item* item);
+void Item_SetAssembleFunc(Item* item, ItemFunc func);
+void Item_SetTalkFunc(Item* item, ItemFunc func);
+void Item_SetThrowFunc(Item* item, ItemFunc func);
 /* Print a description of the item to standard output */
+
 void Item_Print(Item* item);

@@ -88,30 +88,18 @@
     <ClCompile Include="EngineFunctions.c">
       <Filter>World Data\Item Functions</Filter>
     </ClCompile>
-    <ClCompile Include="CoverFucntions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="PropellerFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="KeyFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="WheelFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="HostileOrphanFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenHatchButtonFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="EscapePodButtonFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="SelfDestructButtonFunctions.c">
-      <Filter>World Data\Item Functions</Filter>
-    </ClCompile>
+    <ClCompile Include="TalkCommandHandler.c" />
+    <ClCompile Include="Source\StorageRoomDoor.c" />
+    <ClCompile Include="KeyFunctions.c" />
+    <ClCompile Include="CoverFucntions.c" />
+    <ClCompile Include="EscapePodButtonFunctions.c" />
+    <ClCompile Include="HostileOrphanFunctions.c" />
+    <ClCompile Include="OpenHatchButtonFunctions.c" />
+    <ClCompile Include="PropellerFunctions.c" />
+    <ClCompile Include="SelfDestructButtonFunctions.c" />
+    <ClCompile Include="WheelFunctions.c" />
+    <ClCompile Include="PlaneFunctions.c" />
+    <ClCompile Include="ThrowCommandHandler.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\CommandContext.h">
@@ -219,30 +207,20 @@
     <ClInclude Include="EngineFunctions.h">
       <Filter>World Data\Item Functions</Filter>
     </ClInclude>
-    <ClInclude Include="CoverFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="PropellerFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="WheelFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="HostileOrphanFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenHatchButtonFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="EscapePodButtonFunctions.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="SelfDestructButton.h">
-      <Filter>World Data\Item Functions</Filter>
-    </ClInclude>
+    <ClInclude Include="TalkCommandHandler.h" />
+    <ClInclude Include="Source\StorageRoomDoor.h" />
+    <ClInclude Include="KeyFunctions.h" />
+    <ClInclude Include="CoverFunctions.h" />
+    <ClInclude Include="EscapePodButtonFunctions.h" />
+    <ClInclude Include="HostileOrphanFunctions.h" />
+    <ClInclude Include="OpenHatchButtonFunctions.h" />
+    <ClInclude Include="PropellerFunctions.h" />
+    <ClInclude Include="SelfDestructButton.h" />
+    <ClInclude Include="WheelFunctions.h" />
+    <ClInclude Include="PlaneFunctions.h" />
+    <ClInclude Include="ThrowCommandHandler.h" />
+    <ClInclude Include="AssembleCommandHandler.c" />
+    <ClInclude Include="AssembleCommandHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Command Handling">
@@ -263,5 +241,8 @@
     <Filter Include="World Data\Item Functions">
       <UniqueIdentifier>{d3a6b694-c6d2-4ac5-be41-7e77fee84df1}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Links.txt" />
   </ItemGroup>
 </Project>
