@@ -272,7 +272,7 @@ Room* Room10_Build()
 
 	/* Create the room
 	include an initial room description */
-	room = Room_Create("This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase (STAIRS UP) up to the Kitchen.\n");
+	room = Room_Create("This is the Hanger. A large Escape Plane sits in the center of the room. To the South, is a Staircase up to the Kitchen. It is being guarded by an Orphan who doesn’t seem to want to go anywhere, anytime soon.\n");
 
 	/* Exits
 	add one or more exits to allow navigation between rooms */
