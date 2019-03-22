@@ -4,6 +4,8 @@ author      Justin Chambers
 DP email    justin.chambers@digipen.edu
 course      GAM100 ** Do not use this code in your team project
 
+Last Edited by: Hunter Bradley.
+
 Brief Description:
 This file defines the WorldData factory, which creates the WorldData objects used
 in this game.
@@ -313,7 +315,7 @@ WorldData* CreateInitialWorldData()
 	int roomCount = 11;
 
 	/* create the new WorldData object with 3 rooms */
-	worldData = WorldData_Create("Welcome to my GAM100 Game!\n\n", roomCount);
+	worldData = WorldData_Create("Your name is Steve Hunk, Super famous hunky adventure of the entire steampunk era. You are coming back from your most recent adventure by catching a lift with a band of Orphan Pirates on there Airship. You get woken up from your slumber by a loud bang coming from the Engine room. You know that these Orphans won’t hesitate to abandon ship without you and your Hunkiness, so your best option is to find another way of escape.Right now, you are in your Cabin.\n\n", roomCount);
 
 	/* build each room and assign them to the world data */
 	WorldData_SetRoom(worldData, 0, Room0_Build());
