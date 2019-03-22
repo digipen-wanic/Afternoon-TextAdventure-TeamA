@@ -326,7 +326,7 @@ WorldData* CreateInitialWorldData()
 	WorldData_SetRoom(worldData, 7, Room7_Build());
 	WorldData_SetRoom(worldData, 8, Room8_Build());
 	WorldData_SetRoom(worldData, 9, Room9_Build());
-	WorldData_SetRoom(worldData,10 , Room10_Build());
+	WorldData_SetRoom(worldData, 10, Room10_Build());
 
 
 
