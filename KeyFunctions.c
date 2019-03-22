@@ -34,6 +34,8 @@ void Key_Use(CommandContext context, GameState* gameState, WorldData* worldData)
 		printf("TODO: UNLOCKING DOOR");
 		gameState->gameFlags = GameFlags_Add(gameState->gameFlags, "srdoorOpen");
 		gameState->inventory = ItemList_Remove(gameState->inventory, key);
+		Room_AddRoomExit(WorldData_GetRoom(worldData, 8), "south", 4);
+
 	}
 	else {
 		printf("TODO: NO KEY");

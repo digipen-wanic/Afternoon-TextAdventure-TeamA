@@ -250,7 +250,6 @@ Room* Room8_Build()
 	Room_AddRoomExit(room, "east", 6);  /* 1 = the room index this exit connects to */
 	Room_AddRoomExit(room, "north", 0);  /* 1 = the room index this exit connects to */
 	Room_AddRoomExit(room, "west", 2);  /* 1 = the room index this exit connects to */
-	Room_AddRoomExit(room, "south", 4);  /* 1 = the room index this exit connects to */
 
 	/* Items
 	add items to the room */
