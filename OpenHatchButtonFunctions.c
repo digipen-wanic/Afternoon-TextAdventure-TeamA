@@ -22,11 +22,11 @@ void OpenHatchButton_Use(CommandContext context, GameState* gameState, WorldData
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: Wheel Take Description\n");
+	printf("You Pressed the Button. You can hear the Hatch Doors Opening in the Distance.\n");
 }
 
 /* Build a "brick" object */
 Item* OpenHatchButton_Build()
 {
-	return Item_Create("openhatch", "TODO: OpenHatch Description", false, OpenHatchButton_Use, NULL, NULL);
+	return Item_Create("openhatch", "The Button to open the Hatch doors. This is the Button you need to press to escape with your Hunkiness.", false, OpenHatchButton_Use, NULL, NULL);
 }
