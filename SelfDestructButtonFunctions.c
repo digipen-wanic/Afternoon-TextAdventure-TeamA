@@ -28,5 +28,5 @@ void SelfDestructButton_Use(CommandContext context, GameState* gameState, WorldD
 /* Build a "brick" object */
 Item* SelfDestructButton_Build()
 {
-	return Item_Create("escapepodbutton", "The Self-Destruct Button for the ship. Best not to press the button while your still on board the ship, or that will be the end of you and your Hunkiness.", false, SelfDestructButton_Use, NULL, NULL);
+	return Item_Create("escapepodbutton", "The Self-Destruct Button for the ship. Don't press the button or that will be the end of you and your Hunkiness.", false, SelfDestructButton_Use, NULL, NULL);
 }

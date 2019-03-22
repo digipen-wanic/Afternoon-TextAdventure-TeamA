@@ -23,7 +23,8 @@ void OpenHatchButton_Use(CommandContext context, GameState* gameState, WorldData
 	UNREFERENCED_PARAMETER(worldData);
 
 	printf("You Pressed the Button. You can hear the Hatch Doors Opening in the Distance.\n");
-	Room_SetDescription(room, "The Escape Plane Hatch. You can see the open sea from here, as well as metal parts from the ship that are falling into the sea.");
+	Room_SetDescription(WorldData_GetRoom(worldData, gameState->currentRoomIndex), "The Escape Plane Hatch. You can see the open sea from here, as well as metal parts from the ship that are falling into the sea.");
+	gameState->gameFlags = GameFlags_Add(gameState->gameFlags, "hatchOpen");
 }
 
 /* Build a "brick" object */
