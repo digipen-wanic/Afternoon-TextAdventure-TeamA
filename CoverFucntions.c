@@ -22,11 +22,11 @@ void Cover_Take(CommandContext context, GameState* gameState, WorldData* worldDa
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: Cover Take Description\n");
+	printf("You take the cover with your Hunkiness. You may have broken the game with that.\n");
 }
 
 /* Build a "brick" object */
 Item* Cover_Build()
 {
-	return Item_Create("cover", "TODO: Cover Description", true, NULL, Cover_Take, NULL);
+	return Item_Create("cover", "The Escape Plane Hatch. You will need to Open this to escape with all of you Hunkiness still intact.", true, NULL, Cover_Take, NULL);
 }

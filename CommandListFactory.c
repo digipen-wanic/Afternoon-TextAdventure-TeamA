@@ -13,9 +13,34 @@ in this game.
 #include "CommandListFactory.h" /* Function declarations */
 #include "CommandList.h" /* CommandList and CommandList_Add */
 #include "CommandHandlerFunctions.h" /* all Handle___Command functions */
+#include "ThrowCommandHandler.h"
+#include "TalkCommandHandler.h"
+#include "CommandData.h" /* struct CommandData, CommandContext */
+#include "GameState.h" /* struct GameState */
+#include "WorldData.h" /* WorldData_GetRoom */
+#include "Room.h" /* Room_GetItemList */
+#include "ItemList.h" /* ItemList_FindItem */
+#include "Item.h" /* ItemFunc, Item_GetUseFunc */
+void HandleAssembleCommand(CommandData* command, GameState* gameState, WorldData* worldData)
+{
+	Item* assembling; /* the item to be used */
+	assembling = ItemList_FindItem(*Room_GetItemList(WorldData_GetRoom( worldData, gameState->currentRoomIndex)), command->noun);
+	if (assembling != NULL) {
+		ItemFunc assembleFunc = Item_GetAssembleFunc(assembling);
+		if (assembleFunc != NULL) {
+			assembleFunc(CommandContext_User, gameState, worldData);
+		}
+
+		else {
+			printf("You can't assemble a %s!", command->noun);
+		}
+	}
+	else {
+		printf("You don't see a %s to assemble!", command->noun);
+	}
 
 
-/* Create the command list with all commands used in this game.*/
+}/* Create the command list with all commands used in this game.*/
 CommandList* CreateCommandList()
 {
 	/* The command list to be returned, starting empty */
@@ -47,9 +72,8 @@ CommandList* CreateCommandList()
 	CommandList_Add(cmdListPtr, "i", HandleInventoryCommand, false);
 	CommandList_Add(cmdListPtr, "go", HandleGoCommand, true);
 	CommandList_Add(cmdListPtr, "g", HandleGoCommand, false);
-	/* TODO ADVANCED: create aditional commands
-	this should require the creation of additional .c files to implement the command functions */
+	CommandList_Add(cmdListPtr, "throw", HandleThrowCommand, true);
+	CommandList_Add(cmdListPtr, "assemble", HandleAssembleCommand, true);
 	CommandList_Add(cmdListPtr, "talk", HandleTalkCommand, true);
-	/* return the newly created command list */
 	return commandList;
 }

@@ -22,11 +22,11 @@ void SelfDestructButton_Use(CommandContext context, GameState* gameState, WorldD
 	UNREFERENCED_PARAMETER(gameState);
 	UNREFERENCED_PARAMETER(worldData);
 
-	printf("TODO: EscapePodButton Take Description\n");
+	printf("You Pressed the Button. The ship Blows up. This is the end of you and your Hunkiness. Hopefully you will have a successor who has more Hunkiness then you have…\n");
 }
 
 /* Build a "brick" object */
 Item* SelfDestructButton_Build()
 {
-	return Item_Create("escapepodbutton", "TODO: EscapePodButton Description", false, SelfDestructButton_Use, NULL, NULL);
+	return Item_Create("escapepodbutton", "The Self-Destruct Button for the ship. Don't press the button or that will be the end of you and your Hunkiness.", false, SelfDestructButton_Use, NULL, NULL);
 }

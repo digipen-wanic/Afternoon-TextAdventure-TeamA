@@ -84,6 +84,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AssembleCommandHandler.c" />
+    <ClInclude Include="AssembleCommandHandler.h" />
     <ClInclude Include="CandyFunctions.h" />
     <ClInclude Include="CoverFunctions.h" />
     <ClInclude Include="EngineFunctions.h" />
@@ -92,6 +94,7 @@
     <ClInclude Include="HostileOrphanFunctions.h" />
     <ClInclude Include="KeyFunctions.h" />
     <ClInclude Include="OpenHatchButtonFunctions.h" />
+    <ClInclude Include="PlaneFunctions.h" />
     <ClInclude Include="PropellerFunctions.h" />
     <ClInclude Include="SelfDestructButton.h" />
     <ClInclude Include="Source\BrickFunctions.h" />
@@ -120,12 +123,15 @@
     <ClInclude Include="Source\Room.h" />
     <ClInclude Include="Source\RoomExit.h" />
     <ClInclude Include="Source\stdafx.h" />
+    <ClInclude Include="Source\StorageRoomDoor.h" />
     <ClInclude Include="Source\TakeCommandHandler.h" />
     <ClInclude Include="Source\targetver.h" />
     <ClInclude Include="Source\UseCommandHandler.h" />
     <ClInclude Include="Source\WorldData.h" />
     <ClInclude Include="Source\WorldDataFactory.h" />
+    <ClInclude Include="TalkCommandHandler.h" />
     <ClInclude Include="TeddyFunctions.h" />
+    <ClInclude Include="ThrowCommandHandler.h" />
     <ClInclude Include="WheelFunctions.h" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +145,7 @@
     <ClCompile Include="KeyFunctions.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="OpenHatchButtonFunctions.c" />
+    <ClCompile Include="PlaneFunctions.c" />
     <ClCompile Include="PropellerFunctions.c" />
     <ClCompile Include="SelfDestructButtonFunctions.c" />
     <ClCompile Include="Source\BrickFunctions.c" />
@@ -162,12 +169,18 @@
     <ClCompile Include="Source\Room.c" />
     <ClCompile Include="Source\RoomExit.c" />
     <ClCompile Include="Source\stdafx.c" />
+    <ClCompile Include="Source\StorageRoomDoor.c" />
     <ClCompile Include="Source\TakeCommandHandler.c" />
     <ClCompile Include="Source\UseCommandHandler.c" />
     <ClCompile Include="Source\WorldData.c" />
+    <ClCompile Include="TalkCommandHandler.c" />
     <ClCompile Include="TeddyFunctions.c" />
+    <ClCompile Include="ThrowCommandHandler.c" />
     <ClCompile Include="WheelFunctions.c" />
     <ClCompile Include="WorldDataFactory.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Links.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

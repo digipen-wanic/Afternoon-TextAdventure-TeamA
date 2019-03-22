@@ -16,7 +16,7 @@ This file defines the Item interface, which is used to manage items in the game.
 #define MAX_ITEM_NAME_LENGTH 16 
 
 /* the maximum length of an item's description */
-#define MAX_ITEM_DESCRIPTION_LENGTH 128
+#define MAX_ITEM_DESCRIPTION_LENGTH 512
 
 
 /* An item in the game */
@@ -29,6 +29,8 @@ typedef struct Item
 	ItemFunc takeFunc;	/* a function called when the user takes this item, if any */
 	ItemFunc dropFunc;	/* a function called when the user uses this item, if any */
 	ItemFunc talkFunc;
+	ItemFunc assembleFunc;
+	ItemFunc throwFunc;
 } Item;
 
 
@@ -60,7 +62,9 @@ Item* Item_Create(const char* name, const char* description, bool isCarryable, I
 	item->useFunc = useFunc;
 	item->takeFunc = takeFunc;
 	item->dropFunc = dropFunc;
-
+	item->talkFunc = NULL;
+	item->assembleFunc = NULL;
+	item->throwFunc = NULL;
 	/* return the new object */
 	return item;
 }
@@ -134,7 +138,25 @@ ItemFunc Item_GetTalkFunc(Item* item)
 {
 	return (item != NULL) ? item->talkFunc : NULL;
 }
-
+ItemFunc Item_GetAssembleFunc(Item* item)
+{
+	return (item != NULL) ? item->assembleFunc : NULL;
+}ItemFunc Item_GetThrowFunc(Item* item)
+{
+	return (item != NULL) ? item->throwFunc : NULL;
+}
+void Item_SetTalkFunc(Item* item, ItemFunc func)
+{
+	item->talkFunc = func;
+}
+void Item_SetAssembleFunc(Item* item, ItemFunc func)
+{
+	item->assembleFunc = func;
+}
+	void Item_SetThrowFunc(Item* item, ItemFunc func)
+	{
+		item->throwFunc = func;
+	}
 /* Print a description of the item to standard output */
 void Item_Print(Item* item)
 {
