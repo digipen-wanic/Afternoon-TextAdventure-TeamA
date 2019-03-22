@@ -68,7 +68,7 @@ void HostileOrphan_Talk(CommandContext context, GameState* gameState, WorldData*
 		gameState->inventory = ItemList_Remove(gameState->inventory, candy);
 
 		/* Tell the user what they did */
-		printf("Orphan General Toby: “Wait… Is that the candy that i had on the counter…? Give me that!”\n You Throw the candy. Toby Lunges after the candy out of the Hanger door. You are free to fix the escape plane now.\n");
+		printf("Orphan General Toby: “Wait… Is that the candy that i had on the counter…? Give me that!”\n");
 
 		/* Add to the player's score */
 		GameState_ChangeScore(gameState, 10);
