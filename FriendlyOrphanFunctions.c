@@ -48,9 +48,9 @@ void FOrphan_Talk(CommandContext context, GameState* gameState, WorldData* world
 	else
 	{
 		gameState->inventory = ItemList_Remove(gameState->inventory, teddy);
-		printf("TODO TEDDY\n");
+		printf("You hand John Mr.Fluffles, your only true friend in the world.\n");
 		/* Tell the user what they did */
-		printf("Orphan of Storage Protrol, John: “Thank you!”\n You hand John Mr.Fluffles, your only true friend in the world. You obtain the Storage Key!\n");
+		printf("Orphan of Storage Protrol, John: “Thank you! Oh, here, it wouldn't be a fair trade if i didn't give you something in return.”\n You obtain the Storage Key!\n");
 
 		/* Add to the player's score */
 		GameState_ChangeScore(gameState, 10);
