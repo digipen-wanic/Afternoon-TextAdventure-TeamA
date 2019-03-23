@@ -16,7 +16,7 @@ not entirely be so.
 
 
 /* The maximum length of the game introduction string. */
-#define MAX_INTRODUCTION_LENGTH 256
+#define MAX_INTRODUCTION_LENGTH 1024
 
 
 /* The world data for the game. */
